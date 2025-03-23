@@ -10,7 +10,7 @@ export default defineConfig({
       name: "remoteApp",
       filename: "remoteEntry.js",
       exposes: {
-        "./Button": "./src/components/Button.jsx", // Expose the Button component
+        "./Header": "./src/components/Header.tsx", // Expose the Header component
       },
       shared: ["react", "react-dom"], // Share dependencies
     }),
