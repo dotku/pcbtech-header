@@ -15,4 +15,10 @@ export default defineConfig({
       shared: ["react", "react-dom"], // Share dependencies
     }),
   ],
+  build: {
+    target: "esnext",
+    modulePreload: false,
+    minify: false,
+    cssCodeSplit: false,
+  },
 });
